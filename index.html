@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="WhatsApp Image 2024-08-04 at 4.24.08 PM.jpeg">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swa');
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+        }
+        #intro,#socialicon{
+            position: relative;
+            top: 150px;
+        }
+        #socialicon{
+            position: relative;
+            left: -320px;
+        }
+        header{
+            background-color: #f0f0f0;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 40px;
+            height: 50px;
+        }
+        #logo{
+            color: #601cfc;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+            padding-top: 15px;
+            padding-left: 40px;
+            position: relative;
+            bottom: 10px;
+        }
+        #navbar{
+            position: relative;
+            right: 40px;
+        }
+        #navbar a{
+            color: blue;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: 30px;
+        }
+        #navbar a:hover{
+            color: #601cfc;
+        }
+        #socialicons a {
+            width: 100px;
+            height: 100px;
+        }
+        section{
+            padding: 55px 200px;
+        }
+        #main{
+            width: 70%;
+            height: 100vh;
+            align-items: center;
+            display: block;
+            background: url(WhatsApp\ Image\ 2024-08-04\ at\ 4.24.08\ PM.jpeg) no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        #socialicon{
+            position: relative;
+            right: 150px;
+        }
+        #main h2{
+            color: #fff;
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        #main h2 span {
+            color: #4e9eff;
+            font-size: 4em;
+            font-weight: 600;
+        }
+        #main h3 {
+            color:#fff;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #mycefrs{
+            text-decoration: none;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #3a6cf4;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: inline-block;
+            padding: 0.9375em 2.1875em;
+            letter-spacing: 1px;
+            border-radius: 15px;
+            transition: 1.5s ease;
+        }
+        #mycefrs:hover{
+            background-color:#0a49f6;
+            transform: scale(1.1);
+        }
+        #socialicon a{
+            color: white;
+            font-size: 1.7em;
+            padding-right: 30px;
+        }
+        #services{
+            min-height: 100vh;
+        }
+        #title{
+            display: flex;
+            justify-content: center;
+            color: #3a6cf4;
+            font-size: 2.2em;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        #content{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            height: 100%;
+        }
+        #card{
+            background-color: #fff;
+            width: 21.25em;
+            box-shadow: 5px 5px 25px rgba(1, 1, 1, 15%);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 100px 15px 0px 15px;
+        }
+        #card:hover{
+            transform: scale(1.1);
+            transition: 1s ease;
+            cursor: pointer;
+        }
+        #icon{
+            color: #3a6cf4;
+            font-size: 8em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #info p{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #info h3 {
+            color: #3a6cf4;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-align: center;
+        }
+        #con{
+            color: #3a6cf4;
+            font-size: 8em;
+            text-align: center;
+            margin-bottom: 15px; 
+        }
+        #footertitle{
+            color: white;
+        }
+        #footertitle2{
+            background-color: black;
+            display: flex;
+            flex: row;
+            font-size: 1.3em;
+            font-weight: 600;
+            padding: 1.5em;
+            justify-content: space-between;
+        }
+        #licon a{
+           justify-content: right;
+            color: white;
+            margin: 15px;
+            font-size: 1.7em;
+        }
+        #licon a :hover{
+            transform: scale(1.1);
+            transition: 1s ease;
+        }
+        #footertitle span{
+            color: #3a6cf4;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+         <p id="logo" class="text-left">Abdullah Geba</p>
+         <nav id="navbar" class="text-right">
+            <a href="#services">Services</a>
+            <a href="#mycertificates">Certificates</a>
+            <a href="#callus">Contact Me</a>
+         </nav>
+    </header>
+    <section id="main">
+        <div id="intro">
+            <h2>Hello,I`m Abdullah <br><span> Front-end Developer</span></h2>
+            <h3>Prime designer with prime expertise</h3>
+            <a href="#mycertificates" id="mycefrs">My Certificates</a>
+        </div>
+        
+        <div id="socialicon">
+            <a href="https://www.facebook.com/profile.php?id=100080903841843&mibexitd=ZbWKwl"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/abdullahgebaofficial?igsh=cG5pbTY0YjhtYXVo"><i class="fab fa-instagram"></i></a>
+            <a href="http://github.com/AbdullahG-1"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    <section  id="services">
+        <h2 id="title">Services</h2>
+        <div id="content">
+                <div id="card">
+                <div id="icon"><i class="fas fa-laptop"></i></div>
+                <div id="info">
+                    <h3>Front end development</h3>
+                    <p>I still beginner in front-end development But I will do my best for you
+                    </p>
+                </div>
+            </div>
+            <div id="card">
+                <div id="icon"><i class="fas fa-pen"></i></div>
+                <div id="info">
+                    <h3>Designer</h3>
+                    <p>Prime designs is my forever passion</p>
+                </div>
+            </div>
+            <div id="card">
+                <div id="icon"><i class="fas fa-hourglass-start"></i></div>
+                <div id="info">
+                    <h3>Time planning</h3>
+                    <p>I`ve got my passion to arrange the time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mycertificates">
+        <h2 id="title">My Certificates</h2>
+    <div id="content">
+        <div id="card">
+            <div id="icon"><img src="WhatsApp Image 2024-08-05 at 1.11.31 PM (1).jpeg" width="90%"height="45%"></div>
+            <div id="info">
+                <h3>Create small business website with weebly</h3>
+            </div>
+        </div>
+        <div id="card">
+            <div id="icon"><img src="WhatsApp Image 2024-08-05 at 1.11.31 PM.jpeg" width="90%"height="45%"></div>
+            <div id="info">
+                <h3>Html,Css,Js for web developers</h3>
+            </div>
+        </div>
+        <div id="card">
+            <div id="icon"><img src="WhatsApp Image 2024-08-05 at 1.28.43 PM.jpeg" width="90%"height="45%"></div>
+            <div id="info">
+                <h3>build a full website using Wordpress</h3>
+            </div>
+        </div>
+    </section>
+    <section id="callus">
+        <h2 id="title">Contact me</h2>
+    <div id="content">
+        <div id="card">
+            <div id="icon"><i class="fas fa-phone"></i></div>
+            <div id="info">
+                <h3>Phone</h3>
+                <p>+201114175210</p>
+            </div>
+        </div>
+        <div id="card">
+            <div id="icon"><i class="fas fa-envelope"></i></div>
+            <div id="info">
+                <h3>E-mail</h3>
+                <p>amag2182010@gmail.com</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer id="footertitle2">
+        <p id="footertitle">Copyright &copy; <span>Abdullah Geba</span></p>
+        <div id="licon">
+            <a href="https://www.facebook.com/profile.php?id=100080903841843&mibexitd=ZbWKwl"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/abdullahgebaofficial?igsh=cG5pbTY0YjhtYXVo"><i class="fab fa-instagram"></i></a>
+            <a href="http://github.com/AbdullahG-1"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
